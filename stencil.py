@@ -53,8 +53,7 @@ def main(argv):
   # main code starts here
   ###################################
 
-  logger.info('Hello')
-  logger.debug('Hello')
+
  
 
 if __name__ == "__main__":

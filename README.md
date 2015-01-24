@@ -1,8 +1,20 @@
 # python_stencil
 
+
+## Usage
+
 Python console application template with command line arguments
 
-Includes logging, help function and option -v changing logging to debug.
+Includes logging, command line arguments and help function. 
+
+
+### Logging
+
+Pass -v or --verbose to change logging to debug for you app.
+
+logger.info('Hello')
+logger.debug('Hello')
+
 
 ## License
 
