@@ -21,8 +21,6 @@ def help():
 def main(argv):
 
   # make sure command line arguments are valid
-
-
   try:
     options, args = getopt.getopt(
 
