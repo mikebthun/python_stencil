@@ -26,6 +26,7 @@ def Run(cmd):
   (status,output) = commands.getstatusoutput(cmd)
 
   if status > 0:
+    logger.error(cmd)
     logger.error(output)
     sys.exit(2)
 
