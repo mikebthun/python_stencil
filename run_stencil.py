@@ -15,13 +15,13 @@ logger.setLevel(logging.INFO) #logging.DEBUG
 
 def help():
 
-  print " Usage: stencil.py --help "
+  print " Usage: stencil.py [--help] "
 
 
 
 def Run(cmd):
  
-  print "** Running:", cmd,
+  logger.info("** Running:i %s" % cmd)
 
   (status,output) = commands.getstatusoutput(cmd)
 
@@ -30,7 +30,6 @@ def Run(cmd):
     logger.error(output)
     sys.exit(2)
 
-  print '[OK]'
   return output
 
 
