@@ -15,7 +15,7 @@ logger.setLevel(logging.INFO) #logging.DEBUG
 
 def help():
 
-  print " Usage: stencil.py [--help] "
+  print " Usage: %s [--help] " % sys.argv[0]
 
 
 
