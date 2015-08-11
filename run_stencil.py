@@ -13,7 +13,7 @@ logger.addHandler(hdlr)
 logger.setLevel(logging.INFO) #logging.DEBUG
 
 
-def help():
+def Usage():
 
   print " Usage: %s [--help] " % sys.argv[0]
 
@@ -21,7 +21,7 @@ def help():
 
 def Run(cmd):
  
-  logger.info("** Running:i %s" % cmd)
+  logger.info("** Running: %s" % cmd)
 
   (status,output) = commands.getstatusoutput(cmd)
 
@@ -57,7 +57,7 @@ def main(argv):
   # handle command line arugments
   for opt, arg in options:
     if opt in ('-h', '--help'):
-      help()
+      Usage()
       sys.exit(2)
     elif opt in ('-v', '--verbose'):
       logger.setLevel(logging.DEBUG) 
